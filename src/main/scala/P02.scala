@@ -1,6 +1,8 @@
 package org.p99.scala
 
 import java.util.NoSuchElementException
+
+// Collection of methods which return the second-to-last element of a list
 object P02 {
 
   def penultimate[A](list: List[A]): A = list match {

@@ -2,6 +2,7 @@ package org.p99.scala
 
 import java.util.NoSuchElementException
 
+// Collection of methods which return the last elmeent of a list
 object P01 {
 
   // Go with the library definition
