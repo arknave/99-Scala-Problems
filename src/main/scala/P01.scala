@@ -6,7 +6,7 @@ import java.util.NoSuchElementException
 object P01 {
 
   // Go with the library definition
-  def last[A](list: List[A]) = list.last
+  def standardLast[A](list: List[A]) = list.last
 
   // But write others in order to learn!
   def lastIterative[A](list: List[A]) = {
@@ -15,9 +15,9 @@ object P01 {
   }
 
   // Write in multiple paradigms
-  def lastRecursive[A](list: List[A]): A = list match {
-    case last :: Nil => last
-    case _ :: xs     => lastRecursive(xs)
+  def last[A](list: List[A]): A = list match {
+    case l :: Nil => l
+    case _ :: xs     => last(xs)
     case _           => throw new NoSuchElementException
   }
 }
